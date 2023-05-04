@@ -1,0 +1,53 @@
+.botonmodal {
+
+    background-color: blue;
+    border: 0px;
+
+}
+
+.botonmodal:hover {
+    background-color: blueviolet;
+}
+
+
+.contenedorModal {
+    margin-block: 50px;
+}
+
+
+.modal-header {
+    background-color: #232936;
+
+    .modal-title {
+        color: white;
+        text-align: center;
+        font-family: 'Rubik Iso', cursive;
+
+    }
+}
+
+
+.modal-footer {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #232936;
+
+
+    .btn {
+        font-family: letranueva;
+    }
+
+
+}
+
+.carritoTotal {
+    background-color: rgb(209, 214, 214) !important;
+    border-top: solid black 1px;
+    display: flex;
+    justify-content: end;
+
+    .precioCarrito {
+        font-family: letranueva;
+    }
+}

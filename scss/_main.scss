@@ -1,0 +1,54 @@
+@font-face {
+    font-family: letranueva;
+    src: url(../TT\ Livret\ Display\ Trial\ Light.ttf);
+}
+
+body {
+    background-color: rgb(2, 49, 90);
+}
+
+.titulo {
+    text-align: center;
+    margin: 50px;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+
+}
+
+.container-fluid a {
+
+    text-align: center !important;
+
+
+}
+
+.card-title {
+    font-family: letranueva;
+    color: white;
+    font-size: 18px;
+}
+
+.card-text {
+    font-family: letranueva;
+    color: white;
+    font-size: 13px;
+
+}
+
+.contenedor_cartas {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.boton {
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.card {
+    background-color: rgb(2, 49, 90);
+
+    border-radius: 0px;
+
+
+}

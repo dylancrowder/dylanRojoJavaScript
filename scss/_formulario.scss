@@ -1,0 +1,58 @@
+.padre_formulario {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.hijo_formulario {
+    
+    padding-inline: 5%;
+    padding-block: 5%;
+
+    background: rgb(162, 178, 247);
+    background: radial-gradient(circle, rgba(162, 178, 247, 1) 0%, rgba(0, 90, 195, 1) 100%);
+
+
+
+
+
+    .form-control {
+        padding-inline: 100px;
+
+    }
+
+    .input_formulario {
+        text-align: center;
+        margin: 30px;
+    }
+
+    input {
+        text-align: center;
+        font-family: 'Questrial', sans-serif;
+
+    }
+
+
+    .tituloFormulario {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Rubik Iso', cursive;
+        color: white;
+    }
+}
+
+
+.form-select {
+    margin: 30px;
+
+}
+
+.botonformulario {
+    margin-top: 10px;
+    font-family: 'Questrial', sans-serif;
+    margin-left: 120px;
+}
