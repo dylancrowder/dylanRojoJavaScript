@@ -134,7 +134,7 @@ function sumando() {
 
     if (sumadetodo > precioEnvio) {
         nodoEnvio.innerText = "el envio es gratis";
-        nodo.innerText = "Total:  $" + sumadetodo.addEventListener;
+        nodo.innerText = "Total:  $" + sumadetodo;
 
     }
     else {
@@ -149,10 +149,7 @@ function sumando() {
 
 
 
-function guardarLocal() {
-    localStorage.setItem("montototal", sumadetodo);
 
-}
 
 
 
