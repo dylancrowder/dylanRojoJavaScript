@@ -1,17 +1,48 @@
 .navbar {
-
     background-color: #232936 !important;
-
 }
 
 .titulo_navegador {
     color: white;
-    font-family: 'Rubik Iso', cursive;
+    font-family: letraFija;
     font-size: 30px;
 
 }
 
 .iconoCarrito {
     width: 40px;
+    filter: brightness(0) invert(1);
+}
 
+.iconoCarrito:hover {
+    filter: brightness(0) invert(0);
+}
+
+.boton_icono {
+    background-color: #232936;
+    border: #232936 0px solid;
+
+}
+
+.boton_icono:hover {
+    background-color: #ffffff;
+    border: #232936 0px solid;
+}
+
+
+.numeroCarrito {
+  /*   position: absolute;
+    z-index: 1;
+    right: 28px;
+    top: 30px; */
+    
+    border-radius: 100px;
+    background-color: rgb(254, 254, 255);
+
+    p {
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        font-family: letraFija;
+       
+    }
 }

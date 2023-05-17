@@ -1,17 +1,21 @@
 .botonmodal {
 
-    background-color: blue;
+    background-color: #5C636A;
     border: 0px;
-
+    font-family: letraFija;
 }
 
 .botonmodal:hover {
-    background-color: blueviolet;
+    background-color: #41464b;
 }
 
 
 .contenedorModal {
     margin-block: 50px;
+
+    p {
+        font-family: letraFija;
+    }
 }
 
 
@@ -21,7 +25,7 @@
     .modal-title {
         color: white;
         text-align: center;
-        font-family: 'Rubik Iso', cursive;
+        font-family: letraFija;
 
     }
 }
@@ -35,7 +39,7 @@
 
 
     .btn {
-        font-family: letranueva;
+        font-family: letraFija;
     }
 
 
@@ -43,11 +47,24 @@
 
 .carritoTotal {
     background-color: rgb(209, 214, 214) !important;
-    border-top: solid black 1px;
+    
     display: flex;
     justify-content: end;
 
     .precioCarrito {
-        font-family: letranueva;
+        font-family: letraFija;
+        
+    }
+}
+
+
+.carritoImagen {
+    display: flex;
+    justify-content: space-around;
+
+    .imagenCarrito {
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
     }
 }

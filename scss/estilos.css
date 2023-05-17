@@ -2,18 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @font-face {
-  font-family: letranueva;
-  src: url(../TT\ Livret\ Display\ Trial\ Light.ttf);
+  font-family: letraFija;
+  src: url(../EMLATIN6.ttf);
 }
 body {
-  background-color: rgb(2, 49, 90);
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .titulo {
   text-align: center;
   margin: 50px;
-  font-family: "Rubik Iso", cursive;
-  color: white;
+  font-family: letraFija;
+  color: rgb(0, 0, 0);
 }
 
 .container-fluid a {
@@ -21,28 +24,35 @@ body {
 }
 
 .card-title {
-  font-family: letranueva;
-  color: white;
-  font-size: 18px;
+  font-family: letraFija;
+  color: rgb(0, 0, 0);
+  font-size: 21px;
 }
 
 .card-text {
-  font-family: letranueva;
-  color: white;
-  font-size: 13px;
+  font-family: letraFija;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 }
 
 .contenedor_cartas {
+  border: 0px;
   margin-left: 150px;
-  margin-top: 20px;
 }
 
 .boton {
-  font-family: "Questrial", sans-serif;
+  background-color: #5C636A;
+  border: 0px;
+  font-family: letraFija;
+}
+
+.boton:hover {
+  background-color: #323639;
 }
 
 .card {
-  background-color: rgb(2, 49, 90);
+  border: 0px solid white;
+  background-color: rgb(240, 240, 240);
   border-radius: 0px;
 }
 
@@ -52,24 +62,53 @@ body {
 
 .titulo_navegador {
   color: white;
-  font-family: "Rubik Iso", cursive;
+  font-family: letraFija;
   font-size: 30px;
 }
 
 .iconoCarrito {
   width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.iconoCarrito:hover {
+  filter: brightness(0) invert(0);
+}
+
+.boton_icono {
+  background-color: #232936;
+  border: #232936 0px solid;
+}
+
+.boton_icono:hover {
+  background-color: #ffffff;
+  border: #232936 0px solid;
+}
+
+.numeroCarrito {
+  /*   position: absolute;
+    z-index: 1;
+    right: 28px;
+    top: 30px; */
+  border-radius: 100px;
+  background-color: rgb(254, 254, 255);
+}
+.numeroCarrito p {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  font-family: letraFija;
 }
 
 footer {
-  padding-block: 20px;
+  padding-block: 10px;
   background-color: #232936;
-  margin-top: 50px;
+  margin-top: auto;
 }
 
 .textoEnvio {
   color: white;
-  font-size: 25PX;
-  font-family: "Rubik Iso", cursive;
+  font-size: 20px;
+  font-family: letraFija;
   text-align: center;
 }
 
@@ -83,11 +122,11 @@ footer {
 .hijo_formulario {
   padding-inline: 5%;
   padding-block: 5%;
-  background: rgb(162, 178, 247);
-  background: radial-gradient(circle, rgb(162, 178, 247) 0%, rgb(0, 90, 195) 100%);
+  background: rgb(134, 135, 138);
 }
 .hijo_formulario .form-control {
   padding-inline: 100px;
+  border-radius: 0px;
 }
 .hijo_formulario .input_formulario {
   text-align: center;
@@ -95,12 +134,12 @@ footer {
 }
 .hijo_formulario input {
   text-align: center;
-  font-family: "Questrial", sans-serif;
+  font-family: letraFija;
 }
 .hijo_formulario .tituloFormulario {
   text-align: center;
   margin-top: 20px;
-  font-family: "Rubik Iso", cursive;
+  font-family: letraFija;
   color: white;
 }
 
@@ -110,21 +149,35 @@ footer {
 
 .botonformulario {
   margin-top: 10px;
-  font-family: "Questrial", sans-serif;
-  margin-left: 120px;
-}
-
-.botonmodal {
-  background-color: blue;
+  margin-left: 100px;
+  background-color: #5C636A;
+  font-family: letraFija;
   border: 0px;
 }
 
+.botonformulario:hover {
+  background-color: #323639 !important;
+}
+
+.warning {
+  color: red;
+}
+
+.botonmodal {
+  background-color: #5C636A;
+  border: 0px;
+  font-family: letraFija;
+}
+
 .botonmodal:hover {
-  background-color: blueviolet;
+  background-color: #41464b;
 }
 
 .contenedorModal {
   margin-block: 50px;
+}
+.contenedorModal p {
+  font-family: letraFija;
 }
 
 .modal-header {
@@ -133,7 +186,7 @@ footer {
 .modal-header .modal-title {
   color: white;
   text-align: center;
-  font-family: "Rubik Iso", cursive;
+  font-family: letraFija;
 }
 
 .modal-footer {
@@ -142,15 +195,24 @@ footer {
   background-color: #232936;
 }
 .modal-footer .btn {
-  font-family: letranueva;
+  font-family: letraFija;
 }
 
 .carritoTotal {
   background-color: rgb(209, 214, 214) !important;
-  border-top: solid black 1px;
   display: flex;
   justify-content: end;
 }
 .carritoTotal .precioCarrito {
-  font-family: letranueva;
+  font-family: letraFija;
+}
+
+.carritoImagen {
+  display: flex;
+  justify-content: space-around;
+}
+.carritoImagen .imagenCarrito {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
 }/*# sourceMappingURL=estilos.css.map */

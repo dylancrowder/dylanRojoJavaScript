@@ -1,17 +1,23 @@
 @font-face {
-    font-family: letranueva;
-    src: url(../TT\ Livret\ Display\ Trial\ Light.ttf);
+    font-family: letraFija;
+    src: url(../EMLATIN6.ttf);
 }
 
+
+
+
 body {
-    background-color: rgb(2, 49, 90);
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .titulo {
     text-align: center;
     margin: 50px;
-    font-family: 'Rubik Iso', cursive;
-    color: white;
+    font-family: letraFija;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -23,31 +29,37 @@ body {
 }
 
 .card-title {
-    font-family: letranueva;
-    color: white;
-    font-size: 18px;
+    font-family: letraFija;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
 }
 
 .card-text {
-    font-family: letranueva;
-    color: white;
-    font-size: 13px;
+    font-family: letraFija;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
 
 }
 
 .contenedor_cartas {
+    border: 0px;
     margin-left: 150px;
-    margin-top: 20px;
 }
 
 .boton {
-    font-family: 'Questrial', sans-serif;
+    background-color: #5C636A;
+    border: 0px;
+    font-family: letraFija;
 
 }
 
-.card {
-    background-color: rgb(2, 49, 90);
+.boton:hover {
+    background-color: #323639;
+}
 
+.card {
+    border: 0px solid white;
+    background-color: rgb(240, 240, 240);
     border-radius: 0px;
 
 
