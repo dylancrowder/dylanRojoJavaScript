@@ -72,21 +72,27 @@ const mostrarCarrito = () => {
 
   productosEnCarrito.forEach((product) => {
     const { nombre, precio, id, cantidad, img } = product;
-    modalBody.innerHTML += `
-        <div class="carritoImagen">
-            <img class="imagenCarrito" src="${img}" alt="">
-            <div class="contenedorModal">
-                <p>producto :${nombre}</p>
-                <p>precio: ${precio}</p> 
-                <p>cantidad: ${cantidad}</p>
-                <button id="hola" onclick="eliminarProducto (${id})" class="btn btn-danger botonmodal">eliminar producto</button>
-                <button  onclick="nuevoProducto(${id})">+</button>
-                <button onclick="restarProducto(${id})">-</button>
-            </div>
-        </div>
+    let rutaImagen = "";
 
-        
-`;
+    if (window.location.pathname.includes("index.html")) {
+      rutaImagen = img;
+    } else {
+      rutaImagen = `../${img}`;
+    }
+
+    modalBody.innerHTML += `
+      <div class="carritoImagen">
+        <img class="imagenCarrito" src="${rutaImagen}" alt="">
+        <div class="contenedorModal">
+          <p>producto: ${nombre}</p>
+          <p>precio: ${precio}</p> 
+          <p>cantidad: ${cantidad}</p>
+          <button id="hola" onclick="eliminarProducto(${id})" class="btn btn-danger botonmodal">eliminar producto</button>
+          <button onclick="nuevoProducto(${id})">+</button>
+          <button onclick="restarProducto(${id})">-</button>
+        </div>
+      </div>
+    `;
   });
 
   guardarEnStorage();
@@ -188,7 +194,6 @@ function ocultarPrecio(carta) {
 
 /* mostrar final del carrito antes de comprar */
 const mostrarCarritoss = () => {
-  
   const modalBodys = document.getElementById("carrera");
 
   modalBodys.innerHTML = "";
@@ -211,7 +216,7 @@ const mostrarCarritoss = () => {
   <tbody>
 
     <tr>
-    <td><img class="imagenCarritos" src="${img}" alt=""></td>
+    <td><img class="imagenCarritos" src="../${img}" alt=""></td>
     <td>${nombre}</td>
     <td>${precio}</td>
     <td>${cantidad}</td>
@@ -226,13 +231,12 @@ const mostrarCarritoss = () => {
 `;
   });
 
-  const miInput = document.getElementById('botonCarrito');
-  miInput.addEventListener('click', () => {
-    Swal.fire('compra realizada con exito');
+  const miInput = document.getElementById("botonCarrito");
+  miInput.addEventListener("click", () => {
+    Swal.fire("compra realizada con exito");
     modalBodys.innerHTML = "";
     localStorage.clear();
     location.reload(true);
-
   });
   sumando();
 };
