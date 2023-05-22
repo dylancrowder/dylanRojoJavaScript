@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "nombre": "buzo",
+        "cantidad": 1,
+        "precio": 1000,
+        "img": "/imagenes/253088_900x-removebg-preview.png"
+    },
+    {
+        "id": 2,
+        "nombre": "remera",
+        "cantidad":1,
+        "precio": 4000,
+        "img": "/imagenes/remerablanca-removebg-preview.png"
+    },
+    {
+        "id": 3,
+        "nombre": "pantalon",
+        "cantidad":1,
+        "precio":2000,
+        "img": "/imagenes/25261_900x-removebg-preview.png"
+    }
+
+
+]

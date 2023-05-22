@@ -16,7 +16,7 @@ formulario.addEventListener("submit", e => {
     formularioNombre.innerHTML = "";
     formularioNumero.innerHTML = "";
     formularioEmail.innerHTML = "";
-    if (nombre.value.length < 6) {
+    if (nombre.value.length < 4) {
         formularioNombre.innerHTML += `<p id="nombre">Nombre incorrecto</p>`
         entrar = true;
     }

@@ -30,6 +30,7 @@ body {
 }
 
 .card-text {
+  display: none;
   font-family: letraFija;
   color: rgb(0, 0, 0);
   font-size: 15px;
@@ -41,7 +42,7 @@ body {
 }
 
 .boton {
-  background-color: #5C636A;
+  background-color: #5c636a;
   border: 0px;
   font-family: letraFija;
 }
@@ -215,4 +216,33 @@ footer {
   margin-top: 50px;
   width: 150px;
   height: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nombreTabla {
+  border: 2px solid black;
+}
+
+.contenedordelcarrito {
+  border: 2px solid black;
+  margin: 30px;
+}
+.contenedordelcarrito .contenedorCarro {
+  display: flex;
+  margin: 30px;
+  font-family: letranueva;
+}
+.contenedordelcarrito .contenedorCarro .imagenCarritos {
+  width: 180px;
+}
+
+.totalycomprar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 60px;
 }/*# sourceMappingURL=estilos.css.map */

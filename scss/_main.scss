@@ -1,66 +1,57 @@
 @font-face {
-    font-family: letraFija;
-    src: url(../EMLATIN6.ttf);
+  font-family: letraFija;
+  src: url(../EMLATIN6.ttf);
 }
 
-
-
-
 body {
-    background-color: rgb(240, 240, 240);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .titulo {
-    text-align: center;
-    margin: 50px;
-    font-family: letraFija;
-    color: rgb(0, 0, 0);
-
+  text-align: center;
+  margin: 50px;
+  font-family: letraFija;
+  color: rgb(0, 0, 0);
 }
 
 .container-fluid a {
-
-    text-align: center !important;
-
-
+  text-align: center !important;
 }
 
 .card-title {
-    font-family: letraFija;
-    color: rgb(0, 0, 0);
-    font-size: 21px;
+  font-family: letraFija;
+  color: rgb(0, 0, 0);
+  font-size: 21px;
 }
 
 .card-text {
-    font-family: letraFija;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-
+  display: none;
+  font-family: letraFija;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 }
 
 .contenedor_cartas {
-    border: 0px;
-    margin-left: 150px;
+  border: 0px;
+  margin-left: 150px;
 }
 
 .boton {
-    background-color: #5C636A;
-    border: 0px;
-    font-family: letraFija;
-
+  background-color: #5c636a;
+  border: 0px;
+  font-family: letraFija;
 }
 
 .boton:hover {
-    background-color: #323639;
+  background-color: #323639;
 }
 
 .card {
-    border: 0px solid white;
-    background-color: rgb(240, 240, 240);
-    border-radius: 0px;
-
-
+  border: 0px solid white;
+  background-color: rgb(240, 240, 240);
+  border-radius: 0px;
 }
+

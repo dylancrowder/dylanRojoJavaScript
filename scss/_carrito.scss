@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nombreTabla{
+  border: 2px solid black;
+}
+
+.contenedordelcarrito {
+  border: 2px solid black;
+  margin: 30px;
+  .contenedorCarro {
+    display: flex;
+    margin: 30px;
+    font-family: letranueva;
+
+    .imagenCarritos {
+      width: 180px;
+    }
+  }
+}
+
+.totalycomprar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
